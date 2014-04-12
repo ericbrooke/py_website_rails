@@ -40,9 +40,12 @@ gem 'spring',        group: :development
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 group :test do
   gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'growl'
 end
 
