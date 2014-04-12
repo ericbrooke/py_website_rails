@@ -11,13 +11,13 @@ class StaticPagesController < ApplicationController
   def team
   end
 
-  def product
+  def products
   end
 
   def services
   end
 
-  def career
+  def careers
   end
 
   def investors
