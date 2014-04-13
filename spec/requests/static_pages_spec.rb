@@ -95,4 +95,17 @@ describe "Static pages" do
 		end
 	end
 
+	describe "footer contents" do
+
+		it "should have the current year in the copyright notice" do
+			visit '/'
+			expect(page).to have_content(Time.now.year) 
+		end
+
+		it "should have the copyright notice" do
+			visit '/'
+			expect(page).to have_content("Copyright Professional You Inc.") 
+		end
+	end
+
 end
