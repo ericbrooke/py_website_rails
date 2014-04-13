@@ -5,7 +5,7 @@ describe "Static pages" do
 	describe "Home page" do
 
 		it "should have the content 'Professional You'" do
-			visit '/'
+			visit root_path
 			expect(page).to have_content('Professional You')
 		end
 
@@ -18,7 +18,7 @@ describe "Static pages" do
 	describe "blog page" do
 
 		it "should have the title Blog" do
-			visit '/blog'
+			visit blog_path
 			expect(page).to have_title("Professional You | Blog")
 		end
 	end
@@ -26,7 +26,7 @@ describe "Static pages" do
 	describe "careers page" do
 
 		it "should have the title Careers" do
-			visit '/careers'
+			visit careers_path
 			expect(page).to have_title("Professional You | Careers")
 		end
 	end
@@ -34,7 +34,7 @@ describe "Static pages" do
 	describe "contact page" do
 
 		it "should have the title Contact" do
-			visit '/contact'
+			visit contact_path
 			expect(page).to have_title("Professional You | Contact")
 		end
 	end
@@ -42,7 +42,7 @@ describe "Static pages" do
 	describe "index page" do
 
 		it "should have the title Index" do
-			visit '/index'
+			visit index_path
 			expect(page).to have_title("Professional You | Site Index")
 		end
 	end
@@ -50,7 +50,7 @@ describe "Static pages" do
 	describe "investors page" do
 
 		it "should have the title Investors" do
-			visit '/investors'
+			visit investors_path
 			expect(page).to have_title("Professional You | Investors")
 		end
 	end
@@ -58,7 +58,7 @@ describe "Static pages" do
 	describe "products page" do
 
 		it "should have the title Products" do
-			visit '/products'
+			visit products_path
 			expect(page).to have_title("Professional You | Products")
 		end
 	end
@@ -66,7 +66,7 @@ describe "Static pages" do
 	describe "services page" do
 
 		it "should have the title Services" do
-			visit '/services'
+			visit services_path
 			expect(page).to have_title("Professional You | Services")
 		end
 	end
@@ -74,7 +74,7 @@ describe "Static pages" do
 	describe "team page" do
 
 		it "should have the title Services" do
-			visit '/team'
+			visit team_path
 			expect(page).to have_title("Professional You | Team")
 		end
 	end
@@ -82,7 +82,7 @@ describe "Static pages" do
 	describe "vision page" do
 
 		it "should have the title Vision" do
-			visit '/vision'
+			visit vision_path
 			expect(page).to have_title("Professional You | Vision")
 		end
 	end
@@ -90,7 +90,7 @@ describe "Static pages" do
 	describe "why page" do
 
 		it "should have the title Why" do
-			visit '/why'
+			visit why_path
 			expect(page).to have_title("Professional You | Why")
 		end
 	end
@@ -98,12 +98,12 @@ describe "Static pages" do
 	describe "footer contents" do
 
 		it "should have the current year in the copyright notice" do
-			visit '/'
+			visit root_path
 			expect(page).to have_content(Time.now.year) 
 		end
 
 		it "should have the copyright notice" do
-			visit '/'
+			visit root_path
 			expect(page).to have_content("Copyright Professional You Inc.") 
 		end
 	end

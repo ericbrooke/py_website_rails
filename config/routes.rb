@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   root 'static_pages#home'
 
   match '/vision', to: 'static_pages#vision', via: 'get'
