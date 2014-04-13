@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Professional You | <%= yield(:title) %></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Professional You | <%= yield(:title) %></title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 
-  
-  <%= favicon_link_tag 'favicon.ico' %>
+
+	<%= favicon_link_tag 'favicon.ico' %>
 
 	<meta name="Generator" content="sublime 3" />
-  <meta name="Author" content="Eric Brooke" />
-  <meta name="Keywords" content="Professional, recruitment, career, talent, management, leadership" />
-  <meta name="Description" content="We will replace the resume with a highly visual career portfolio, which will be supported by personality matching software. This, we believe will change the way we find a future boss or an employee. Professional You is an online career management platform, which will go deeper than just job titles it will look at your work." />
+	<meta name="Author" content="Eric Brooke" />
+	<meta name="Keywords" content="Professional, recruitment, career, talent, management, leadership" />
+	<meta name="Description" content="We will replace the resume with a highly visual career portfolio, which will be supported by personality matching software. This, we believe will change the way we find a future boss or an employee. Professional You is an online career management platform, which will go deeper than just job titles it will look at your work." />
 
- 	<script type="text/javascript">
+	<script type="text/javascript">
 
 		/* Google Analytics code set for www.professionalyou.com */
 
-  		var _gaq = _gaq || [];
- 		 _gaq.push(['_setAccount', 'UA-16152074-1']);
- 		 _gaq.push(['_trackPageview']);
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-16152074-1']);
+		_gaq.push(['_trackPageview']);
 
-  		(function() {
- 		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-   			 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  		})();
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
 
 	</script>
 
-	<!--Banner-->
- 	<%= link_to root_path do %>
- 		<%= image_tag("pybanner.png", id:"banner", width:"321", height:"90", alt:"Professional You banner") %>
- 	<% end %>
-
 </head>
 <body>
+	<div id="wrapper">
+	
+		<!--Banner-->
+		<%= link_to root_path do %>
+		<%= image_tag("pybanner.png", id:"banner", width:"321", height:"90", alt:"Professional You banner") %>
+		<% end %>
 
-<%= render "layouts/nav" %>
+		<%= render "layouts/nav" %>
 
-<%= yield %>
+		<%= yield %>
 
-<%= render "layouts/footer" %>
+		<%= render "layouts/footer" %>
+	</div>
 </body>
 
 </html>
