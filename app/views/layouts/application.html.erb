@@ -34,36 +34,15 @@
  	
  		<%= image_tag("pybanner.png", id:"banner", width:"321", height:"90", alt:"Professional You banner") %>
 
-	<!--Website menu-->	
-
-    <div id="nav">
-        <ul class="listnav">        
-            <li id="currentpg">Home</li>        
-            <li><%= link_to "Vision", vision_path %> </li>
-            <li><%= link_to "Why", why_path %></li>
-            <li><%= link_to "Team", team_path %> </li>
-            <li><%= link_to "Products", products_path %> </li>
-            <li><%= link_to "Services", services_path %> </li>
-            <li><%= link_to "Careers", careers_path %> </li>
-            <li><%= link_to "Investors", investors_path %> </li>
-            <li><%= link_to "Blog", "http://professionalyou.wordpress.com" %> </li>
-            <li><%= link_to "Index", index_path %> </li>  
-            <li><%= mail_to "eric@professionalyou.net","Contact us" %></li>
-        </ul>    
-    </div>   <!--End Nav-->
 
 </head>
 <body>
 
+<%= render "layouts/nav" %>
+
 <%= yield %>
 
-
-
+<%= render "layouts/footer" %>
 </body>
-
-	<div id="footer">
-			<p>&copy; Copyright Professional You Inc. 2008-2014. All rights reserved.</p>
-			<p>contact <%= mail_to "web@professionalyou.net", "Webmaster" %> <%= image_tag("pytree32.png", alt: "professional you tree") %> <%= link_to "Site Index", index_path %></p>
-	</div> <!-- End of footer-->
 
 </html>
