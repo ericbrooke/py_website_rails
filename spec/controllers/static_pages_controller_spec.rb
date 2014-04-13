@@ -30,9 +30,9 @@ describe StaticPagesController do
     end
   end
 
-  describe "GET 'product'" do
+  describe "GET 'products'" do
     it "returns http success" do
-      get 'product'
+      get 'products'
       response.should be_success
     end
   end
@@ -44,9 +44,9 @@ describe StaticPagesController do
     end
   end
 
-  describe "GET 'career'" do
+  describe "GET 'careers'" do
     it "returns http success" do
-      get 'career'
+      get 'careers'
       response.should be_success
     end
   end
