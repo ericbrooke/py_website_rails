@@ -1,0 +1,32 @@
+
+<table id="email_form">
+	<%= form_tag do %>
+		<tr>
+			<td colspan="2" class="whitebold">This sounds interesting. Please keep me informed:</td>
+		</tr>
+
+		<tr>
+			<td><%= label_tag :first_name %></td>
+			<td><%= text_field_tag :first_name %></td>
+		</tr>
+
+		<tr>
+			<td> <%= label_tag :last_name %></td>
+			<td><%= text_field_tag :last_name %></td>
+		</tr>
+
+		<tr>
+			<td><%= label_tag :email %></td>
+			<td><%= email_field_tag :email %></td>
+		</tr>
+
+		<tr>
+			<td><%= text_area_tag 'why', "What is your career pain?", cols: 40, rows: 10 %></td>
+		</tr>
+
+		<tr>
+			<td><%= submit_tag "Keep me up to date" %></td>
+		</tr>
+
+	<% end %>	
+</table>

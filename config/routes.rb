@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   match '/index', to: 'static_pages#index', via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
 
+  resources :users, only: :new
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
