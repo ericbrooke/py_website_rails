@@ -1,6 +1,7 @@
 
 <table id="email_form">
-	<%= form_tag do %>
+	<%= form_tag(controller: "users", action: "create_interested", method: "post") do %>
+	<%= render 'shared/error_messages' %>
 		<tr>
 			<td colspan="2" class="whitebold">This sounds interesting. Please keep me informed:</td>
 		</tr>

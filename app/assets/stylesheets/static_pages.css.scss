@@ -2,23 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*
-author: Eric Brooke
-date: 22 July 2011
-editor: BBedit Mac OS X
-browsers tested in: Firefox, Safari, Chrome on Mac OS X
-*/
+/*SASS variable setup----------------------------------*/
+$dark_green: #005112;
+$grass_green: #8EB338;
+$dark_brown: #521624;
+
+$font_stack: "Century Gothic", arial, sans-serif;
 
 /*Tags-------------------------------------------------*/
 
 body	{
-		font-family: "Century Gothic", arial, sans-serif;
+		font: 100% $font-stack;
 		}
 
  h1, h2, h3, h4, h5, h6	
 		{
-		font-family: "Century Gothic", arial, sans-serif;
-		color: #005112;
+		font: 100% $font-stack;
+		color: $dark_green
 		}
 
 
@@ -26,16 +26,16 @@ body	{
 
 	a:link{
 			text-decoration:none;
-			color:#8EB338;
+			color: $grass_green;
 			}
 
 	a:visited{
-			color:#005112;
+			color: $grass_green;
 			text-decoration:none;
 			}
 
 	a:hover{
-			background-color:#8EB338;
+			background-color: $grass_green;
 			color:white;
 			text-decoration:none;
 
@@ -65,18 +65,18 @@ body	{
 			}
 
 .greenbold {
-			font-family: "Century Gothic", Verdana, sans-serif;
-			color:#005112;
+			font: 100% $font-stack;
+			color: $dark_green;
 			font-weight: bold;
 			}
 
 .grassbold {
-			color:#8eb338;
+			color: $grass_green;
 			font-weight: bold;
 			}
 
 .whitebold {
-			font-family: "Century Gothic", Verdana, sans-serif;
+			font: 100% $font-stack;
 			color:#ffffff;
 			font-weight: bold;
 			}
@@ -114,47 +114,41 @@ body	{
 		}
 
 #nav	{
-		font-family: "Century Gothic", Verdana, sans-serif;
-
+		font: 100% $font-stack;
 		background-color: white;
-
 		width:150px;
-
 		padding: 10px;
-
 		position: absolute;
-
 		top:100px;
-
 		right:0px;
 
 		}
 
 #currentpg	{
 			color:#ffffff;
-			background-color:#521624;
+			background-color: $dark_brown;
 			padding: 1px;
 			}
 
 #email_form{
-			font-family: "Century Gothic", Verdana, sans-serif;
+			font: 100% $font-stack;
 			border-radius: 20px;/*Will not work in old browsers*/
 			padding: 10px;
 			margin-top: 10px;
 			margin-left: auto;
 			margin-right: auto;
-			background-color: #8eb338;
+			background-color: $grass_green;
 			border: 0px;
 			}
 
 
 #summary	{
-			font-family: "Century Gothic", Verdana, sans-serif;
+			font: 100% $font-stack;
 			border-radius: 20px; /*Will not work in old browsers*/
 			padding: 10px;
 			margin-left: auto;
 			margin-right: auto;
-			background-color: #8eb338;
+			background-color: $grass_green;
 			border: 0px;
 			color: #000000;
 			}
@@ -163,7 +157,7 @@ body	{
 			}
 
 #footer {
-			font-family: "Century Gothic", Verdana, sans-serif;
+			font: 100% $font-stack;
 			font-size: .9em;
 			text-align:center;
 			padding: 10px 0 20px 0 ;
